@@ -1,0 +1,89 @@
+body { /* Apply gradient to the whole page */
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Assuming Poppins is used, add to index.html if not */
+  background: linear-gradient(135deg, #ffb6b9 0%, #fae3d9 100%);
+  min-height: 100vh;
+}
+
+.dashboard-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px; /* Reduced padding */
+  box-sizing: border-box; /* Include padding in width/height calculation */
+}
+
+.dashboard-container {
+  width: 200%;
+  max-width: 750px; /* Reduced max-width */
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.85); /* Slightly less transparent */
+  border-radius: 20px; /* Slightly smaller border radius */
+  box-shadow: 0 6px 25px rgba(0,0,0,0.08); /* Adjusted shadow */
+  padding: 25px; /* Reduced padding */
+  text-align: center; /* Center align content */
+}
+
+/* Remove old navbar styles as they are now in navbar.component.css */
+/* --- Navigation Bar --- */
+/* .navbar { ... } */
+/* .nav-link { ... } */
+/* .nav-link.active, .nav-link:hover { ... } */
+/* .logout-btn { ... } */
+/* .logout-btn:hover { ... } */
+/* --- End Navigation Bar --- */
+
+.dashboard-title {
+  text-align: center;
+  color: #7f53ac;
+  margin-bottom: 5px; /* Reduced margin */
+  font-size: 2rem; /* Reduced font size */
+}
+
+.dashboard-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px; /* Reduced margin */
+  font-size: 1rem; /* Reduced font size */
+}
+
+.featured-quizzes-title { /* Styles for the new "Featured Quizzes" title */
+  text-align: left;
+  color: #333;
+  font-size: 1.5rem; /* Reduced font size */
+  margin-bottom: 15px; /* Reduced margin */
+  font-weight: 600;
+}
+
+.featured-quizzes {
+  display: flex;
+  justify-content: space-between; /* Changed from space-around */
+  margin: 25px 0; /* Adjusted margin */
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+/* Remove old quiz-card styles as they are now in quiz-card.component.css */
+/* .quiz-card { ... } */
+/* .quiz-card:hover { ... } */
+
+.explore-btn {
+  display: inline-block; 
+  margin: 25px auto 0 auto; /* Adjusted margin */
+  background: #a084ee;
+  color: #fff;
+  font-weight: 500; 
+  font-size: 1rem; /* Reduced font size */
+  border-radius: 6px; /* Slightly smaller border radius */
+  padding: 10px 25px; /* Reduced padding */
+  border: none; 
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.explore-btn:hover {
+  background: #8f78d6; 
+}
+
+/* Removed .ai-float-btn as it's not in the new design */
+/* .ai-float-btn { ... } */

@@ -1,0 +1,50 @@
+/* --- Navigation Bar --- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 10px; /* Reduced border radius */
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.05); /* Adjusted shadow */
+  padding: 8px 20px; /* Reduced padding */
+  margin: 0 auto 25px auto; /* Adjusted margin */
+  max-width: -webkit-fill-available; /* Fit content width */
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.9rem; /* Reduced font size */
+  padding: 8px 18px; /* Reduced padding */
+  border-radius: 6px; /* Reduced border radius */
+  margin: 0 6px; /* Reduced margin */
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-link.active, .nav-link:hover {
+  background: #e0c3fc;
+  color: #8f4be8;
+}
+
+.logout-btn {
+  background: none; /* Adjusted for new design */
+  border: none; /* Adjusted for new design */
+  color: #8f4be8;
+  font-weight: 500;
+  font-size: 0.9rem; /* Reduced font size */
+  border-radius: 6px; /* Reduced border radius */
+  padding: 8px 18px; /* Reduced padding */
+  margin-left: 15px; /* Reduced margin */
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #f3eaff;
+  color: #7f53ac;
+}
